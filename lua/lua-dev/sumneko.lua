@@ -88,8 +88,8 @@ function M.setup(opts)
         workspace = {
           -- Make the server aware of Neovim runtime files
           library = M.library(opts),
-          maxPreload = 1000,
-          preloadFileSize = 150,
+          maxPreload = 2000,
+          preloadFileSize = 500,
         },
         -- Do not send telemetry data containing a randomized but unique identifier
         telemetry = { enable = false },
