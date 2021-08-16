@@ -80,10 +80,10 @@ function M.setup(opts)
           path = M.path(),
         },
         completion = { callSnippet = "Replace" },
-        -- diagnostics = {
-        --   -- Get the language server to recognize the `vim` global
-        --   globals = { "vim" },
-        -- },
+        diagnostics = {
+          -- Get the language server to recognize the `vim` global
+          globals = { "vim" },
+        },
         -- hint = { enable = true },
         workspace = {
           -- Make the server aware of Neovim runtime files
